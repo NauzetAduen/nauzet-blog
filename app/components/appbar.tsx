@@ -16,7 +16,6 @@ export default function AppBar() {
                         <AppBarLink text="Work" path="work" />
                         <AppBarLink text="Blog" path="blog" />
                         <AppBarLink text="Resume" path="resume.pdf" />
-                        <AppBarLink text="Contact" path="contact" />
                     </div>
                 </div>
             </div>
