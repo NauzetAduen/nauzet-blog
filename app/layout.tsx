@@ -13,13 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className='max-w-7xl mx-auto'>
         <AppBar />
-        <h1 className="text-3xl font-bold underline">
-          Hello, Next.js!
-        </h1>
         {children}
-        <p>adios</p>
       </body>
     </html>
   )
