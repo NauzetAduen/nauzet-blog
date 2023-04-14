@@ -5,7 +5,7 @@ interface AppBarLinkParam {
     path: string
 }
 
-function AppBarLink(props: AppBarLinkParam) {
+export default function AppBarLink(props: AppBarLinkParam) {
     const { text, path } = props;
     return (
         <Link href={`/${path}`} className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
@@ -13,5 +13,3 @@ function AppBarLink(props: AppBarLinkParam) {
         </Link>
     );
 }
-
-export default AppBarLink;
