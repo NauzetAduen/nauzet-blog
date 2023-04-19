@@ -6,6 +6,7 @@ export default function Work() {
             <ol className="border-l border-neutral-300">
                 {data && data.map(element => (
                     <TimelineCard
+                        key={element.title}
                         title={element.title}
                         description={element.description}
                         date={element.date}
