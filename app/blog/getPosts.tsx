@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect, use } from 'react';
-import PostsError from '../components/blog/postsError';
-import PostsEmpty from '../components/blog/postsEmpty';
-import PostsLayout from '../components/blog/postsLayout';
+import PostsEmpty from './components/postsEmpty';
+import PostsError from './components/postsError';
+import PostsLayout from './components/postsLayout';
 
 interface Article {
     type_of: string;
@@ -52,21 +52,16 @@ export default function GetPosts() {
 
     if (errorMessage) {
         return (
-            <div>
-                <PostsError message={errorMessage} />
-            </div>
+            <PostsError message={errorMessage} />
         )
     }
     if (posts.length == 0) {
         return (
-            <div>
-                <PostsEmpty />
-            </div>
+            <PostsEmpty />
         )
     }
 
     return (
-
         <PostsLayout posts={posts} />
     );
 };

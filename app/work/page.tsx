@@ -1,4 +1,4 @@
-import TimelineCard from "../components/work/timelineCard";
+import TimelineCard from "./components/timelineCard";
 import data from "./timeline.json";
 export default function Work() {
     return (
