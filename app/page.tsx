@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
-import TextBlock from './components/home/textBlock'
-import IconBlock from './components/home/iconBlock'
+import IconBlock from './home/iconBlock'
+import TextBlock from './home/textBlock'
 
 
 export default function Home() {
