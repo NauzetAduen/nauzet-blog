@@ -1,10 +1,12 @@
 interface MessageError {
-    message: string;
+  message: string;
 }
 
 export default function PostsError(error: MessageError) {
-    return (<div>
-        <p>Error calling the api endpoint of dev.to</p>
-        <p>The status of the response: {error.message}</p>
-    </div>)
+  return (
+    <div>
+      <p>Error calling the api endpoint of dev.to</p>
+      <p>The status of the response: {error.message}</p>
+    </div>
+  );
 }
