@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "./page.module.css";
-import IconBlock from "./home/iconBlock";
-import TextBlock from "./home/textBlock";
+import TextBlock from "./home/components/textBlock";
+import ContactBlock from "./home/components/contactBlock";
 
 export default function Home() {
   return (
@@ -30,10 +27,7 @@ export default function Home() {
           highlightedText="interests"
         />
       </div>
-
-      <IconBlock iconPath="" content="" />
-      <IconBlock iconPath="" content="" />
-      <IconBlock iconPath="" content="" />
+      <ContactBlock />
     </div>
   );
 }
