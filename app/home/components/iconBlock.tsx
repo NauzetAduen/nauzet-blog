@@ -14,7 +14,7 @@ export default function IconBlock(props: IconBlockParams) {
     <Link href={url} rel="noopener noreferrer" target="_blank">
       <div className=" text-center ">
         <SvgComponent />
-        <p className="inline-block m-2">{text}</p>
+        <p className="m-2 inline-block">{text}</p>
       </div>
     </Link>
   );

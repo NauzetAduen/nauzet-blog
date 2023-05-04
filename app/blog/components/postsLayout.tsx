@@ -10,7 +10,7 @@ export default function PostsLayout(param: ArticleParam) {
       {param.posts.map((post) => (
         <li
           key={post.id}
-          className="p-4 m-4 border-solid border-2 border-black rounded"
+          className="m-4 rounded border-2 border-solid border-black p-4"
         >
           <h1 className="font-bold">{post.title}</h1>
           <Link href={post.url} rel="noopener noreferrer" target="_blank">
