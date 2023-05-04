@@ -1,4 +1,5 @@
 import AppBar from "./components/appbar";
+import Footer from "./components/footer";
 import "./globals.css";
 import { hankenGrotesk } from "./utils/fonts";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className={`max-w-6xl mx-auto ${hankenGrotesk.className}`}>
         <AppBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
