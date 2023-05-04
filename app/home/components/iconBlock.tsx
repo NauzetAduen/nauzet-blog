@@ -1,16 +1,21 @@
-import Image from "next/image";
+import Link from "next/link";
+import { useCallback } from "react";
+
 interface IconBlockParams {
-  iconPath: string;
-  content: string;
+  svgComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  text: string;
+  url: string;
 }
 
 export default function IconBlock(props: IconBlockParams) {
-  const { iconPath, content } = props;
-  if (iconPath == "") return <></>;
+  const { svgComponent: SvgComponent, text, url } = props;
+
   return (
-    <div>
-      <Image src={`${iconPath}`} alt={`${iconPath}`} />
-      <p>{content}</p>
-    </div>
+    <Link href={url} rel="noopener noreferrer" target="_blank">
+      <div className=" text-center ">
+        <SvgComponent />
+        <p className="inline-block m-2">{text}</p>
+      </div>
+    </Link>
   );
 }
