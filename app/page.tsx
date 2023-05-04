@@ -1,27 +1,49 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "./page.module.css";
-import IconBlock from "./home/iconBlock";
-import TextBlock from "./home/textBlock";
+import TextBlock from "./home/components/textBlock";
+import ContactBlock from "./home/components/contactBlock";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Nauzet Hernández</h1>
-      <h2>Software Engineer</h2>
-      <p>I develop things and complain at my managers</p>
-      <TextBlock
-        title="What do I do?"
-        content="I’m a Software engineer with experience in the front-end side of things.\nAs a Flutter enthusiast, I love building mobile apps.\nI challenge myself everyday to help the teams I work with, trying to create a healthy and productive enviroment."
-      />
-      <TextBlock
-        title="About me"
-        content="My name is Nauzet, often known as Nau by the masses. I live in Las Palmas de Gran Canaria, Spain.\nI’m a Software engineer by the University of Las Palmas de Gran Canaria, with an intesification in software engineering.\nRecently, I’ve started learning to play the bass, with a special interest in funk bass music.
-I go to the gym a couple of times a week, so.., a work in progress."
-      />
-      <IconBlock iconPath="" content="" />
-      <IconBlock iconPath="" content="" />
-      <IconBlock iconPath="" content="" />
+    <div className="">
+      <h1 className="font-bold text-5xl pt-8">Nauzet Hernández</h1>
+      <h2 className="italic text-lg text-gray-500">
+        Software engineer and Flutter enthusiast
+      </h2>
+      <p className="text-2xl py-16 text-justify">
+        Welcome! My name is Nauzet Hernández, and I enjoy combining humor and
+        programming to create innovative solutions. I'm glad you're here, and I
+        hope you enjoy browsing my site.
+      </p>
+      <section className="py-16">
+        <h3 className="font-bold text-3xl pb-4">A little bit more</h3>
+        <div className="grid grid-cols-2 gap-12">
+          <TextBlock
+            text="I'm a software engineer with a passion for Flutter and a focus on front-end development."
+            highlightedText="software engineer"
+          />
+          <TextBlock
+            text="As someone who values teamwork and mental health, I strive to create healthy and productive environments for my colleagues."
+            highlightedText="healthy and productive"
+          />
+          <TextBlock
+            text="Currently, I'm based in Las Palmas, The Canary Islands, Spain, where I advocate for remote work as a way to balance productivity and flexibility."
+            highlightedText="Las Palmas"
+          />
+          <TextBlock
+            text="Outside of work, I enjoy playing the bass, practicing chess, and working out. Like everything else in life, these hobbies are a work in progress."
+            highlightedText="hobbies"
+          />
+        </div>
+      </section>
+      <section className="py-16">
+        <h3 className="font-bold text-3xl pb-4">Wanna chat?</h3>
+        <p className="text-xl text-justify">
+          I'd love to hear from you! Whether you have a question, want to
+          collaborate, or just want to say hi, don't hesitate to reach out. You
+          can send me an email, give me a call or connect with me on LinkedIn
+          using the links below. Looking forward to hearing from you!
+        </p>
+        <ContactBlock />
+      </section>
     </div>
   );
 }

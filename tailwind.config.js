@@ -6,7 +6,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundSize:{
+        visible3: "100% 3px",
+        invisible0: "0% 3px"
+      }
+    },
   },
   plugins: [],
 }
