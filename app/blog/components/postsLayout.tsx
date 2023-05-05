@@ -1,20 +1,28 @@
 import { Article } from "@/app/blog/getPosts";
 import Link from "next/link";
+import { ExternalLinkSvg } from "@/app/components/svg";
+import AnimatedBgText from "@/app/components/animatedBgText";
 
 interface ArticleParam {
   posts: Article[];
 }
 export default function PostsLayout(param: ArticleParam) {
   return (
-    <ul>
+    <ul className="grid grid-cols-3">
       {param.posts.map((post) => (
         <li
           key={post.id}
-          className="m-4 rounded border-2 border-solid border-black p-4"
+          className="relative m-4 rounded border-2 border-solid border-black p-4"
         >
-          <h1 className="font-bold">{post.title}</h1>
-          <Link href={post.url} rel="noopener noreferrer" target="_blank">
-            <h3>Link</h3>
+          <AnimatedBgText text={post.title} />
+
+          <Link
+            href={post.url}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="absolute right-0 top-0"
+          >
+            <ExternalLinkSvg />
           </Link>
           <p className="italic">{post.description}</p>
         </li>
