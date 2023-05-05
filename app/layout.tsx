@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`max-w-6xl mx-auto ${hankenGrotesk.className}`}>
+      <body className={`mx-auto max-w-6xl ${hankenGrotesk.className}`}>
         <AppBar />
         {children}
         <Footer />

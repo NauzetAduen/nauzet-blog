@@ -4,10 +4,10 @@ import AppBarLink from "./appbarlink";
 export default function AppBar() {
   return (
     <nav className="bg-white pt-10">
-      <div className="flex items-center justify-between h-16">
+      <div className="flex h-16 items-center justify-between">
         <div className="flex items-center">
           <Link legacyBehavior href="/">
-            <a className="text-black font-bold text-xl">Nau.</a>
+            <a className="text-xl font-bold text-black">Nau.</a>
           </Link>
         </div>
         <div className="hidden md:block">

@@ -5,14 +5,8 @@ export default function Work() {
     <div>
       <ol className="border-l border-neutral-300">
         {data &&
-          data.map((element) => (
-            <TimelineCard
-              key={element.title}
-              title={element.title}
-              description={element.description}
-              date={element.date}
-              tags={element.tags}
-            />
+          data.map((element, index) => (
+            <TimelineCard key={index} element={element} />
           ))}
       </ol>
     </div>

@@ -1,5 +1,5 @@
 import IconBlock from "./iconBlock";
-import { EmailSvg, LinkedinSvg, PhoneSvg } from "./svg";
+import { EmailSvg, LinkedinSvg, PhoneSvg } from "../../components/svg";
 
 export default function ContactBlock() {
   return (
