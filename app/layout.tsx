@@ -5,7 +5,22 @@ import { hankenGrotesk } from "./utils/fonts";
 
 export const metadata = {
   title: "Nauzet's Portfolio",
-  description: "Nauzet Hernández Portfolio",
+  description: "Nauzet Hernández portfolio and blog.",
+  applicationName: "Nauzet Hernández portfolio and blog",
+  authors: { name: "Nauzet Hernández", url: "https://nauzet.vercel.app" },
+  creator: "Nauzet Hernández",
+  generator: "Next.js",
+  keywords: [
+    "Software engineer",
+    "Flutter",
+    "Blog",
+    "Portfolio",
+    "Software development",
+    "Personal project",
+    "Next.js",
+    "React",
+  ],
+  formatDetection: { telephone: true },
 };
 
 export default function RootLayout({
@@ -17,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`mx-auto max-w-6xl ${hankenGrotesk.className}`}>
         <AppBar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
