@@ -3,7 +3,7 @@ import { EmailSvg, LinkedinSvg, PhoneSvg } from "../../components/svg";
 
 export default function ContactBlock() {
   return (
-    <div className="grid grid-cols-3 gap-6 pt-4">
+    <section className="grid grid-cols-3 gap-6 pt-4">
       <IconBlock
         svgComponent={EmailSvg}
         text="nauzet.aduen@gmail.com"
@@ -19,6 +19,6 @@ export default function ContactBlock() {
         text="PM me!"
         url="https://www.linkedin.com/in/nauzet-aduen-hern%C3%A1ndez-hern%C3%A1ndez-036b4118b/"
       />
-    </div>
+    </section>
   );
 }

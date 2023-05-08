@@ -5,7 +5,7 @@ interface TagListParam {
 export default function TagList(param: TagListParam) {
   if (param.tags == null || param.tags.length == 0) return <></>;
   return (
-    <ul className="">
+    <ul>
       {param.tags.map((tag, index) => (
         <li
           key={index}
