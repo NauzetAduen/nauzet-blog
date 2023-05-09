@@ -29,8 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`mx-auto max-w-6xl ${hankenGrotesk.className}`}>
+    <html lang="en" className="h-full">
+      <body
+        className={`mx-auto max-w-6xl ${hankenGrotesk.className} flex min-h-full flex-col`}
+      >
         <AppBar />
         <main>{children}</main>
         <Footer />
