@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import PostsEmpty from "./components/postsEmpty";
 import PostsError from "./components/postsError";
 import PostsLayout from "./components/postsLayout";
+import Loading from "./components/postsLoading";
 
 interface Article {
   type_of: string;
@@ -27,6 +28,7 @@ export type { Article };
 export default function GetPosts() {
   const [posts, setPosts] = useState<Article[]>([]);
   const [errorMessage, setErrorMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   // const username = "nauzetaduen";
   const username = "nataliedeweerd";
@@ -47,17 +49,17 @@ export default function GetPosts() {
       } catch (error: any) {
         setErrorMessage(error.message);
       }
+      setIsLoading(false);
     };
 
     fetchPosts();
   }, []);
 
-  if (errorMessage) {
-    return <PostsError message={errorMessage} />;
-  }
-  if (posts.length == 0) {
-    return <PostsEmpty />;
-  }
+  if (isLoading) return <Loading />;
+
+  if (errorMessage.length !== 0) return <PostsError message={errorMessage} />;
+
+  if (posts.length === 0) return <PostsEmpty />;
 
   return <PostsLayout posts={posts} />;
 }
