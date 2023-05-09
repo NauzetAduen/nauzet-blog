@@ -7,7 +7,7 @@ export default function AppBar() {
       <div className="flex h-16 items-center justify-between">
         <div className="flex items-center">
           <Link legacyBehavior href="/">
-            <a className="text-xl font-bold text-black">Nau.</a>
+            <a className="text-2xl font-bold text-black">nau.</a>
           </Link>
         </div>
         <div className="hidden md:block">

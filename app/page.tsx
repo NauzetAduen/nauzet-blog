@@ -3,18 +3,16 @@ import ContactBlock from "./home/components/contactBlock";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="font-bold text-5xl pt-8">Nauzet Hernández</h1>
-      <h2 className="italic text-lg text-gray-500">
+    <div>
+      <h1 className="pt-8 text-5xl font-bold">Nauzet Hernández</h1>
+      <h2 className="text-lg italic text-gray-500">
         Software engineer and Flutter enthusiast
       </h2>
-      <p className="text-2xl py-16 text-justify">
-        Welcome! My name is Nauzet Hernández, and I enjoy combining humor and
-        programming to create innovative solutions. I'm glad you're here, and I
-        hope you enjoy browsing my site.
+      <p className="py-16 text-justify text-2xl">
+        I enjoy combining humor and programming to create innovative solutions.
       </p>
       <section className="py-16">
-        <h3 className="font-bold text-3xl pb-4">A little bit more</h3>
+        <h3 className="pb-4 text-3xl font-bold">A little bit more</h3>
         <div className="grid grid-cols-2 gap-12">
           <TextBlock
             text="I'm a software engineer with a passion for Flutter and a focus on front-end development."
@@ -35,8 +33,8 @@ export default function Home() {
         </div>
       </section>
       <section className="py-16">
-        <h3 className="font-bold text-3xl pb-4">Wanna chat?</h3>
-        <p className="text-xl text-justify">
+        <h3 className="pb-4 text-3xl font-bold">Wanna chat?</h3>
+        <p className="text-justify text-xl">
           I'd love to hear from you! Whether you have a question, want to
           collaborate, or just want to say hi, don't hesitate to reach out. You
           can send me an email, give me a call or connect with me on LinkedIn
