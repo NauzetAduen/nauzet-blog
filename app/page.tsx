@@ -9,7 +9,9 @@ export default function Home() {
         Software engineer and Flutter enthusiast
       </h2>
       <p className="py-16 text-justify text-2xl">
-        I enjoy combining humor and programming to create innovative solutions.
+        Hi there! I'm a developer with a passion for infusing creativity and
+        humor into my work. I believe that a lighthearted approach can help make
+        even the most challenging tasks more enjoyable and engaging.
       </p>
       <section className="py-16">
         <h3 className="pb-4 text-3xl font-bold">A little bit more</h3>
@@ -35,10 +37,10 @@ export default function Home() {
       <section className="py-16">
         <h3 className="pb-4 text-3xl font-bold">Wanna chat?</h3>
         <p className="text-justify text-xl">
-          I'd love to hear from you! Whether you have a question, want to
-          collaborate, or just want to say hi, don't hesitate to reach out. You
-          can send me an email, give me a call or connect with me on LinkedIn
-          using the links below. Looking forward to hearing from you!
+          Whether you have a question, want to collaborate, or just want to say
+          hi, don't hesitate to reach out. You can send me an email, give me a
+          call or connect with me on LinkedIn using the links below. Looking
+          forward to hearing from you!
         </p>
         <ContactBlock />
       </section>
