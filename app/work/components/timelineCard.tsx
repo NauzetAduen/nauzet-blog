@@ -1,7 +1,8 @@
 import TimelineDot from "./timelineDot";
 import TagList from "./tagList";
 import Link from "next/link";
-import { ExternalLinkSvg } from "@/app/components/svg";
+import externalLink from "../../assets/svg/externalLink.svg";
+import Image from "next/image";
 
 interface CardDataParam {
   title: string;
@@ -31,7 +32,12 @@ export default function TimelineCard({ element }: { element: CardDataParam }) {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <ExternalLinkSvg />
+              <Image
+                src={externalLink}
+                alt={externalLink}
+                width={16}
+                height={16}
+              />
             </Link>
           )}
         </div>

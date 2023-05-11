@@ -1,16 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface IconBlockParams {
-  svgComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  svgComponent: string;
   url: string;
 }
 
 export default function IconBlock(props: IconBlockParams) {
-  const { svgComponent: SvgComponent, url } = props;
+  const { svgComponent, url } = props;
 
   return (
     <Link href={url} rel="noopener noreferrer" target="_blank">
-      <SvgComponent />
+      <Image src={svgComponent} alt={svgComponent} width={24} height={24} />
     </Link>
   );
 }
