@@ -1,6 +1,6 @@
 import { Article } from "@/app/blog/getPosts";
 import Link from "next/link";
-import { ExternalLinkSvg } from "@/app/components/svg";
+import { CommentSvg, ExternalLinkSvg, HearthSvg } from "@/app/components/svg";
 import AnimatedBgText from "@/app/components/animatedBgText";
 
 interface ArticleParam {
@@ -24,7 +24,13 @@ export default function PostsLayout(param: ArticleParam) {
           >
             <ExternalLinkSvg />
           </Link>
-          <p className="italic">{post.description}</p>
+          <p className="mb-4 italic">{post.description}</p>
+          <div className="absolute bottom-1 flex">
+            <HearthSvg />
+            <p className="ml-1 mr-2 text-sm">{post.positive_reactions_count}</p>
+            <CommentSvg />
+            <p className="ml-1 text-sm">{post.comments_count}</p>
+          </div>
         </li>
       ))}
     </ul>
