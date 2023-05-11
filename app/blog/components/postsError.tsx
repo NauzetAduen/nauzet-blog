@@ -6,17 +6,23 @@ interface MessageError {
 
 export default function PostsError(error: MessageError) {
   return (
-    <div className="space-y-16 py-40 text-center text-3xl">
-      <p>Error calling the api endpoint of dev.to</p>
+    <div className="w-1/2 space-y-8 py-40 text-center text-2xl">
+      <p>
+        Error calling the api endpoint of{" "}
+        <Link
+          href={"https://dev.to/"}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <span className="font-bold">https://dev.to/</span>
+        </Link>
+      </p>
 
       {error && error.message && (
         <p>The status of the response: {error.message}</p>
       )}
-
       <p>
-        Sorry for the inconvenience, try navigate to the rest of the portfolio
-      </p>
-      <p>
+        Sorry for the inconvenience, try navigate to the rest of the portfolio,
         If the error persist, you can contact me at{" "}
         <Link
           href={"mailto:nauzet.aduen@gmail.com"}
@@ -25,6 +31,7 @@ export default function PostsError(error: MessageError) {
         >
           <span className="font-bold">my email</span>
         </Link>
+        .
       </p>
     </div>
   );
