@@ -10,7 +10,7 @@ export default function AppBarLink(props: AppBarLinkParam) {
   return (
     <Link
       href={`/${path}`}
-      className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-700 hover:text-white"
+      className="rounded-md px-3 py-2 text-sm font-medium text-black hover:text-secondary"
     >
       {text}
     </Link>

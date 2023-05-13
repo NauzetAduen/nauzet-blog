@@ -4,7 +4,7 @@ import ContactBlock from "./home/components/contactBlock";
 export default function Home() {
   return (
     <div>
-      <h1 className="pt-8 text-5xl font-bold">Nauzet Hernández</h1>
+      <h1 className="pt-8 text-5xl font-bold text-primary">Nauzet Hernández</h1>
       <h2 className="text-lg italic text-gray-500">
         Software engineer and Flutter enthusiast
       </h2>
