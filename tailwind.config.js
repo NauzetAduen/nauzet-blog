@@ -1,18 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}", // Note the addition of the `app` directory.
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      backgroundSize:{
-        visible3: "100% 3px",
-        invisible0: "0% 3px"
-      }
+export const content = [
+  "./app/**/*.{js,ts,jsx,tsx}",
+  "./pages/**/*.{js,ts,jsx,tsx}",
+  "./components/**/*.{js,ts,jsx,tsx}",
+];
+export const theme = {
+  extend: {
+    backgroundSize: {
+      visible3: "100% 3px",
+      invisible0: "0% 3px"
     },
+    colors: {
+      primary: "#5DB7DE",
+      secondary: "#EAC435"
+    }
   },
-  plugins: [],
-}
+};
+export const plugins = [];
 
