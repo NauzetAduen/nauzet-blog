@@ -15,7 +15,7 @@ interface CardDataParam {
 export default function TimelineCard({ element }: { element: CardDataParam }) {
   const { title, description, date, tags, url } = element;
   return (
-    <li>
+    <li className="py-6">
       <div className="flex-start flex items-center pt-3">
         <TimelineDot />
         <p className="text-sm text-neutral-500 ">{date}</p>

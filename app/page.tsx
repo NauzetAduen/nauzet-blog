@@ -3,17 +3,21 @@ import ContactBlock from "./home/components/contactBlock";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="pt-8 text-5xl font-bold text-primary">Nauzet Hernández</h1>
-      <h2 className="text-lg italic text-gray-500">
-        Software engineer and Flutter enthusiast
-      </h2>
-      <p className="py-16 text-justify text-2xl">
-        Hi there! I'm a developer with a passion for infusing creativity and
-        humor into my work. I believe that a lighthearted approach can help make
-        even the most challenging tasks more enjoyable and engaging.
-      </p>
-      <section className="py-16">
+    <div className="leading-loose">
+      <section className="py-36">
+        <h1 className="pt-8 text-5xl font-bold text-primary">
+          Nauzet Hernández
+        </h1>
+        <h2 className="text-lg italic text-gray-500">
+          Software engineer and Flutter enthusiast
+        </h2>
+        <p className="px-44 py-16 text-justify text-2xl leading-loose">
+          Hi there! I'm a developer with a passion for infusing creativity and
+          humor into my work. I believe that a lighthearted approach can help
+          make even the most challenging tasks more enjoyable and engaging.
+        </p>
+      </section>
+      <section>
         <h3 className="pb-4 text-3xl font-bold">A little bit more</h3>
         <div className="grid grid-cols-2 gap-12">
           <TextBlock

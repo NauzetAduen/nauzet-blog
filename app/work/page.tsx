@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Work() {
   return (
-    <ol className="border-l border-primary">
+    <ol className="border-l border-primary leading-loose ">
       {data &&
         data.map((element, index) => (
           <TimelineCard key={index} element={element} />

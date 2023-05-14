@@ -30,7 +30,7 @@
     },
     {
         "title": "Next.js porftolio #1",
-        "description": "I've always loved the idea of having a personal portfolio, as it allows me to showcase my skills and experience and build my personal brand. Initially, I created a portfolio using Flutter web, but I found that it wasn't the best option for my needs. After working at ADE and acquiring new knowledge, I decided to try using next.js for my portfolio and blog. Although I didn't finish the blog part, the project was an interesting learning experience. I learned how to use next.js effectively, how to improve my web development process, and how to better present my work.",
+        "description": "I've always loved the idea of having a personal portfolio, as it allows me to showcase my skills and experience and build my personal brand. Initially, I created a portfolio using Flutter web, but I found that it wasn't the best option for my needs. While working at ADE and acquiring new knowledge, I decided to try using next.js for my portfolio and blog. Although I didn't finish the blog part, the project was an interesting learning experience. I learned how to use next.js effectively, how to improve my web development process, and how to better present my work.",
         "date": "Oct 2021 - Feb 2022",
         "url": "https://nauzet.vercel.app/",
 
