@@ -5,7 +5,7 @@ import linkedin from "../../assets/svg/linkedin.svg";
 
 export default function ContactBlock() {
   return (
-    <section className="flex justify-center gap-x-4 pt-8">
+    <section className="flex justify-center gap-x-4 pb-16 pt-8">
       <IconBlock svgComponent={email} url="mailto:nauzet.aduen@gmail.com" />
       <IconBlock svgComponent={phone} url="tel:+34685472601" />
       <IconBlock
