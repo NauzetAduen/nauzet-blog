@@ -11,7 +11,7 @@ interface ArticleParam {
 }
 export default function PostsLayout(param: ArticleParam) {
   return (
-    <ul className="my-4 grid sm:grid-cols-3">
+    <ul className="my-4 grid md:grid-cols-2  lg:grid-cols-3">
       {param.posts.map((post) => (
         <li
           key={post.id}
