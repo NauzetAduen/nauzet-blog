@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`mx-auto max-w-6xl ${hankenGrotesk.className} flex h-full min-h-full flex-col`}
+        className={`mx-auto max-w-xs md:max-w-6xl ${hankenGrotesk.className} flex h-full min-h-full flex-col`}
       >
         <AppBar />
         <main className="flex flex-1 items-center justify-center">

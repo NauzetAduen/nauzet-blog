@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="m-8 mt-auto pb-8 text-center leading-tight">
+    <footer className="m-8 mt-auto pb-8 text-center text-xs leading-tight sm:text-base">
       <p>Designed and developed by Nauzet Hernández &copy; 2023</p>
       <p>
         Build with <ColoredLink url="https://nextjs.org/" text="Next.js" /> &{" "}
