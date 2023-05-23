@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PostsEmpty() {
   return (
-    <div className="w-1/2 space-y-8 py-40 text-center text-2xl">
+    <div className=" space-y-8 text-center text-base sm:p-40 sm:text-2xl">
       <p>
         We couldn't find any post by me (nauzetaduen) in{" "}
         <Link
