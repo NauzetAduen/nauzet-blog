@@ -30,8 +30,7 @@ export default function GetPosts() {
   const [errorMessage, setErrorMessage] = useState("");
   const [isLoading, setIsLoading] = useState(true);
 
-  // const username = "nauzetaduen";
-  const username = "nataliedeweerd";
+  const username = "nauzetaduen";
 
   useEffect(() => {
     const fetchPosts = async () => {
