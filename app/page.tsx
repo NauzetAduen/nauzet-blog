@@ -1,25 +1,26 @@
 import TextBlock from "./home/components/textBlock";
 import ContactBlock from "./home/components/contactBlock";
+import Subtitle from "./home/components/subtitle";
 
 export default function Home() {
   return (
     <div className="leading-loose">
-      <section className="py-36">
-        <h1 className="pt-8 text-5xl font-bold text-primary">
+      <section className="py-16 sm:py-36">
+        <h1 className="text-2xl font-bold text-primary sm:pt-8 sm:text-5xl">
           Nauzet Hernández
         </h1>
-        <h2 className="text-lg italic text-gray-500">
+        <h2 className="text-base italic text-gray-500 sm:text-lg">
           Software engineer and Flutter enthusiast
         </h2>
-        <p className="px-44 py-16 text-justify text-2xl leading-loose">
+        <p className="py-8 text-justify text-lg leading-loose sm:py-16 sm:text-2xl">
           Hi there! I'm a developer with a passion for infusing creativity and
           humor into my work. I believe that a lighthearted approach can help
           make even the most challenging tasks more enjoyable and engaging.
         </p>
       </section>
       <section>
-        <h3 className="pb-4 text-3xl font-bold">A little bit more</h3>
-        <div className="grid grid-cols-2 gap-12">
+        <Subtitle text={"A little bit more"} />
+        <div className="grid sm:grid-cols-2 sm:gap-12">
           <TextBlock
             text="I'm a software engineer with a passion for Flutter and a focus on front-end development."
             highlightedText="software engineer"
@@ -38,9 +39,9 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="py-16">
-        <h3 className="pb-4 text-3xl font-bold">Wanna chat?</h3>
-        <p className="text-justify text-xl">
+      <section className="py-16 sm:py-36">
+        <Subtitle text={"Wanna chat?"} />
+        <p className="text-justify text-base sm:text-xl">
           Whether you have a question, want to collaborate, or just want to say
           hi, don't hesitate to reach out. You can send me an email, give me a
           call or connect with me on LinkedIn using the links below. Looking

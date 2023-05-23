@@ -41,7 +41,7 @@ export default function TimelineCard({ element }: { element: CardDataParam }) {
             </Link>
           )}
         </div>
-        <p className="mb-3 text-justify text-lg">{description}</p>
+        <p className="mb-3 text-justify text-base md:text-lg">{description}</p>
         <TagList tags={tags} />
       </div>
     </li>
