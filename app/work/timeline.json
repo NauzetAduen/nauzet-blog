@@ -1,0 +1,55 @@
+[
+
+    {
+        "title": "nauzet-blog",
+        "description": "Rather than reusing my existing portfolio, I decided to create a new one using Next.js 13. I aimed to develop and design a minimalistic and simple website, with a focus on showcasing my work and skills. As for the blog section, I've chosen to fetch my own posts from dev.to. In the first iteration, I plan to link the posts directly to dev.to. Depending on its success and feedback, I'll consider improving the blog section by showing the posts directly on the website itself.",
+        "date": "Apr 2023 - Work in progress",
+        "url": "https://github.com/NauzetAduen/nauzet-blog",
+        "tags": [
+            "Personal project",
+            "Web development",
+            "React",
+            "NextJS 13",
+            "Dev.to"
+        ]
+    },
+    {
+        "title": "Barkibu",
+        "description": "What a journey it was working at Barkibu! Initially hired as a Flutter developer, I ended up taking on responsibilities across the entire stack, from frontend to backend to DevOps. In a small team, you have to wear many hats, and my role changed significantly as we grew from a one-man operation to a team of three. Throughout my time at Barkibu, I learned a great deal about software architecture, design patterns and development tools, including how to apply them effectively in my work. The most memorable part of my job, however, were the alignment weeks in Galicia. Every two months, the company flew us there to learn and grow together as a team. These weeks were incredibly valuable, and I came away from them with a deeper understanding of our work and new skills to apply on the job.",
+        "date": "Jan 2022 - Feb 2023",
+        "url": "https://play.google.com/store/apps/details?id=com.barkibu.app&hl=es&gl=US",
+        "tags": [
+            "Work",
+            "Mobile development",
+            "Flutter",
+            "Ruby on Rails",
+            "Amazon Web Services",
+            "Sentry",
+            "Bitrise"
+        ]
+    },
+    {
+        "title": "Next.js porftolio #1",
+        "description": "I've always loved the idea of having a personal portfolio, as it allows me to showcase my skills and experience and build my personal brand. Initially, I created a portfolio using Flutter web, but I found that it wasn't the best option for my needs. While working at ADE and acquiring new knowledge, I decided to try using next.js for my portfolio and blog. Although I didn't finish the blog part, the project was an interesting learning experience. I learned how to use next.js effectively, how to improve my web development process, and how to better present my work.",
+        "date": "Oct 2021 - Feb 2022",
+        "url": "https://nauzet.vercel.app/",
+
+        "tags": [
+            "Personal project",
+            "Web development",
+            "React",
+            "NextJS"
+        ]
+    },
+    {
+        "title": "Advance Digital Experts",
+        "description": "During my time at ADE, I had the privilege of leading the frontend team responsible for developing a web application aimed at helping companies in the mobility sector adapt to the new e-mobility landscape. React was the natural choice for our project, given its ability to meet our specific requirements. This experience exposed me to a range of tools and libraries, such as Storybook, Redux, SagasJS, and more. But beyond just the technical aspects, my time at ADE was truly rewarding in terms of the friendships I forged and the memories I made. I wish them all the best in their future endeavors.",
+        "date": "May 2021 - Jan 2022",
+        "url": "https://adedelivered.com",
+        "tags": [
+            "Work",
+            "Web development",
+            "React"
+        ]
+    }
+]
