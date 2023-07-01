@@ -5,17 +5,17 @@ import Subtitle from "./home/components/subtitle";
 export default function Home() {
   return (
     <div className="leading-loose">
-      <section className="py-16 sm:py-36">
+      <section className="py-48">
         <h1 className="text-2xl font-bold text-primary sm:pt-8 sm:text-5xl">
           Nauzet Hernández
         </h1>
         <h2 className="text-base italic text-gray-500 sm:text-lg">
           Software engineer and Flutter enthusiast
         </h2>
-        <p className="py-8 text-justify text-lg leading-loose sm:py-16 sm:text-2xl">
-          Hi there! I'm a developer with a passion for infusing creativity and
-          humor into my work. I believe that a lighthearted approach can help
-          make even the most challenging tasks more enjoyable and engaging.
+        <p className="text-justify text-lg leading-loose sm:py-16 sm:text-2xl">
+          I'm a developer with a passion for infusing creativity and humor into
+          my work. I believe that a lighthearted approach can help make even the
+          most challenging tasks more enjoyable and engaging.
         </p>
       </section>
       <section>
