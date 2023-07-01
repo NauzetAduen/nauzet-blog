@@ -12,7 +12,6 @@ export default function AppBar() {
         </div>
         <div className="block">
           <div className="ml-10 flex items-baseline space-x-4">
-            <AppBarLink text="Home" path="" />
             <AppBarLink text="Work" path="work" />
             <AppBarLink text="Blog" path="blog" />
           </div>
